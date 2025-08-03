@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriAfrica Ventures - Business Plan Stratégique 2025-2030</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f7f8fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2A5434 0%, #1E6BA8 100%);
+            color: #FFD700;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #FFD700;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            color: #FFD700;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tab {
+            flex: 1;
+            min-width: 150px;
+            padding: 1rem;
+            background: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            color: #64748b;
+            border-right: 1px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .tab:last-child {
+            border-right: none;
+        }
+        
+        .tab:hover {
+            background: #f8fafc;
+            color: #2A5434;
+        }
+        
+        .tab.active {
+            background: #2A5434;
+            color: white;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #FFD700;
+        }
+        
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .section {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #2A5434;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            border-bottom: 3px solid #D4A574;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #1E6BA8;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        
+        h4 {
+            color: #475569;
+            margin: 1rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #D4A574;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border-left: 3px solid #2A5434;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #D4A574;
+            border-left-color: #D4A574;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2A5434;
+            margin: 0.5rem 0;
+        }
+        
+        .metric-label {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            display: block;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+            white-space: nowrap;
+        }
+        
+        th {
+            background: #2A5434;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .chart-container {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f0f4f8;
+            border-radius: 8px;
+            border: 1px solid #D4A574;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+            border-left: 3px solid #D4A574;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0.5rem;
+            width: 14px;
+            height: 14px;
+            background: #D4A574;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: #1E6BA8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: #2A5434;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            margin: 1rem 0;
+        }
+        
+        .button:hover {
+            background: #1E6BA8;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 2rem;
+            background: #f0f4f8;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border: 2px solid #D4A574;
+        }
+        
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .tab {
+                min-width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
+            }
+            
+            .tab:last-child {
+                border-bottom: none;
+            }
+            
+            .metric-card {
+                min-width: 100%;
+            }
+            
+            table {
+                font-size: 0.85rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+        
+        .metric-card:nth-child(1) .metric-value {
+            color: #2A5434;
+        }
+        
+        .metric-card:nth-child(2) .metric-value {
+            color: #D4A574;
+        }
+        
+        .metric-card:nth-child(3) .metric-value {
+            color: #1E6BA8;
+        }
+        
+        .metric-card:nth-child(4) .metric-value {
+            color: #8B4513;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        p {
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+        
+        ul li {
+            margin-bottom: 0.5rem;
+            color: #475569;
+        }
+        
+        strong {
+            color: #1e293b;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        
+        .table-wrapper table {
+            min-width: 100%;
+            display: table;
+        }
+        
+        @media print {
+            .tabs, .download-section {
+                display: none;
+            }
+            
+            .section {
+                display: block !important;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AgriAfrica Ventures</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 0.5rem;">Business Plan Stratégique 2025-2030</p>
+        <p style="font-size: 1rem; opacity: 0.9;">Leader Panafricain de l'Agrobusiness Durable</p>
+    </div>
+    
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showSection('summary')">Executive Summary</button>
+            <button class="tab" onclick="showSection('shareholders')">Pacte Actionnaires</button>
+            <button class="tab" onclick="showSection('phase1')">Phase 1: Consolidation</button>
+            <button class="tab" onclick="showSection('phase2')">Phase 2: Expansion</button>
+            <button class="tab" onclick="showSection('market')">Analyse de Marché</button>
+            <button class="tab" onclick="showSection('financial')">Projections Financières</button>
+            <button class="tab" onclick="showSection('funding')">Stratégie Financement</button>
+            <button class="tab" onclick="showSection('hr')">Stratégie RH</button>
+            <button class="tab" onclick="showSection('esg')">ESG & Durabilité</button>
+            <button class="tab" onclick="showSection('risk')">Gestion des Risques</button>
+            <button class="tab" onclick="showSection('synthesis')">Synthèse</button>
+        </div>
+        
+        <div class="content">
+            <!-- Executive Summary -->
+            <div id="summary" class="section active">
+                <h2>Executive Summary & Vision</h2>
+                
+                <div class="highlight-box">
+                    <h3>Vision</h3>
+                    <p>Positionner AgriAfrica Ventures comme le leader panafricain de l'agrobusiness durable, en créant une plateforme intégrée d'agriculture moderne qui combine excellence opérationnelle, innovation technologique et impact social positif.</p>
+                </div>
+                
+                <h3>Mission</h3>
+                <p>Transformer l'agriculture africaine en développant et gérant des exploitations agricoles de grande échelle, durables et rentables, tout en créant de la valeur pour nos actionnaires, nos communautés et l'environnement.</p>
+                
+                <h3>Indicateurs Clés de Performance - Horizon 2030</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Surface Totale Exploitée</div>
+                        <div class="metric-value">6,000 Ha</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Chiffre d'Affaires Projeté</div>
+                        <div class="metric-value">850 M MAD</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">EBITDA Margin</div>
+                        <div class="metric-value">35%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Emplois Créés</div>
+                        <div class="metric-value">2,500+</div>
+                    </div>
+                </div>
+                
+                <h3>Proposition de Valeur Unique</h3>
+                <ul>
+                    <li><strong>Intégration Verticale:</strong> De la production à la transformation, maximisant la valeur ajoutée</li>
+                    <li><strong>Focus Cultures à Haute Valeur:</strong> Spécialisation dans le caroubier et cultures d'exportation premium</li>
+                    <li><strong>Excellence Opérationnelle:</strong> Équipe de 20+ ingénieurs ayant créé et géré 90+ exploitations</li>
+                    <li><strong>Durabilité:</strong> Pratiques agricoles responsables et certification internationale</li>
+                    <li><strong>Innovation:</strong> Technologies de pointe pour l'agriculture de précision</li>
+                    <li><strong>Track Record Prouvé:</strong> 18 sociétés agricoles déjà opérationnelles avec 5.5 M MAD de CA</li>
+                </ul>
+                
+                <h3>Trajectoire de Croissance</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Période</th>
+                            <th>Superficie (Ha)</th>
+                            <th>Investissement</th>
+                            <th>Objectif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Consolidation</td>
+                            <td>2025-2027</td>
+                            <td>1,091</td>
+                            <td>60 M MAD</td>
+                            <td>Intégration des actifs existants</td>
+                        </tr>
+                        <tr>
+                            <td>Expansion Nationale</td>
+                            <td>2028-2030</td>
+                            <td>6,000</td>
+                            <td>250 M MAD</td>
+                            <td>Leadership national</td>
+                        </tr>
+                        <tr>
+                            <td>Expansion Africaine</td>
+                            <td>Post-2030</td>
+                            <td>50,000</td>
+                            <td>500 M MAD+</td>
+                            <td>Leadership panafricain (Sierra Leone)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Pacte des Actionnaires -->
+            <div id="shareholders" class="section">
+                <h2>Pacte des Actionnaires Fondateurs</h2>
+                
+                <h3>Structure du Capital Initial</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Actionnaire</th>
+                            <th>Type d'Apport</th>
+                            <th>Valeur</th>
+                            <th>% Capital</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elias Hicham ASKOUR</td>
+                            <td>Apport numéraire</td>
+                            <td>400,000 MAD</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>KEF Investissements SARL</td>
+                            <td>Apport numéraire</td>
+                            <td>600,000 MAD</td>
+                            <td>60%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Définition de l'Apport d'Elias Hicham ASKOUR</h3>
+                <div class="highlight-box">
+                    <h4>Apport en Nature - Cession des Parts Sociales:</h4>
+                    <ul>
+                        <li>Parts sociales représentant 100% du capital de 18 sociétés d'exploitation agricole</li>
+                        <li>Surface totale exploitée : 1,015 hectares</li>
+                        <li>Chiffre d'affaires global 2025 : 5.5 millions MAD</li>
+                        <li>Valorisation provisoire : 40 millions MAD (estimation provisoire)</li>
+                        <li>Modalité : Inscription en Compte Courant d'Associé (CCA)</li>
+                    </ul>
+                    
+                    <h4>Calendrier des Apports:</h4>
+                    <ul>
+                        <li><strong>Étape 1 (Constitution):</strong> 9 sociétés représentant 417 hectares</li>
+                        <li><strong>Étape 2 (2026):</strong> 9 sociétés supplémentaires représentant 674 hectares</li>
+                    </ul>
+                    
+                    <h4>Apport Complémentaire:</h4>
+                    <ul>
+                        <li>Transfert des équipes de GREEN-MED SARL (20+ ingénieurs et techniciens agronomes)</li>
+                        <li>Expertise de plus de 30 ans dans le domaine agricole</li>
+                        <li>Track record : création et équipement de plus de 90 exploitations agricoles</li>
+                    </ul>
+                </div>
+                
+                <h3>Gouvernance</h3>
+                <h4>Structure Juridique</h4>
+                <ul>
+                    <li><strong>Forme sociale:</strong> Société Anonyme (SA)</li>
+                    <li><strong>Dénomination:</strong> AgriAfrica Ventures SA (anciennement "NewCo")</li>
+                    <li><strong>Capital social:</strong> 1,000,000 MAD (libéré à hauteur de 300,000 MAD à la constitution)</li>
+                </ul>
+                
+                <h4>Direction</h4>
+                <ul>
+                    <li><strong>Président-Directeur Général:</strong> Elias Hicham ASKOUR</li>
+                    <li><strong>Expertise financière:</strong> Karim EL FEKKAK (30+ ans d'expérience en ingénierie financière)</li>
+                </ul>
+                
+                <h4>Convention de Gestion</h4>
+                <ul>
+                    <li>Conclusion d'une convention de gestion entre AgriAfrica Ventures SA et ses filiales</li>
+                    <li>Frais de gestion calibrés pour couvrir:</li>
+                    <ul>
+                        <li>Charges salariales de la société holding</li>
+                        <li>Charges financières liées aux avances de trésorerie aux filiales</li>
+                    </ul>
+                </ul>
+                
+                <h3>Modalités de Remboursement du CCA</h3>
+                <div class="highlight-box">
+                    <h4>Engagement de Remboursement:</h4>
+                    <ul>
+                        <li>AgriAfrica Ventures SA s'engage à rembourser le CCA de 40 millions MAD dans un délai de 24 mois</li>
+                        <li>Durant cette période, 100% des dividendes reçus des filiales seront affectés au remboursement</li>
+                        <li>Le CCA ne porte pas d'intérêts</li>
+                    </ul>
+                    
+                    <h4>Plan de Financement 2026-2030:</h4>
+                    <ul>
+                        <li><strong>2026:</strong> Émission obligataire de 60 millions MAD avec "equity upside"
+                            <ul>
+                                <li>40 millions MAD pour remboursement du CCA</li>
+                                <li>20 millions MAD pour financement des investissements et BFR</li>
+                            </ul>
+                        </li>
+                        <li><strong>2028:</strong> Émission obligataire de 250 millions MAD pour expansion à 6,000 Ha</li>
+                        <li><strong>Post-2030:</strong> Tranche 3 de 500 millions MAD pour expansion africaine</li>
+                    </ul>
+                </div>
+                
+                <h3>Droits et Obligations</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clause</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lock-up</td>
+                            <td>3 ans pour fondateurs, 2 ans pour investisseurs</td>
+                        </tr>
+                        <tr>
+                            <td>Tag Along</td>
+                            <td>Protection des minoritaires à partir de 10%</td>
+                        </tr>
+                        <tr>
+                            <td>Drag Along</td>
+                            <td>Activation à 75% du capital</td>
+                        </tr>
+                        <tr>
+                            <td>Anti-dilution</td>
+                            <td>Protection pour fondateurs jusqu'à l'IPO</td>
+                        </tr>
+                        <tr>
+                            <td>Dividendes</td>
+                            <td>Minimum 30% du résultat net après 2028</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Vision Stratégique et Mécanismes de Sortie</h3>
+                <div class="highlight-box">
+                    <h4>Vision 2030:</h4>
+                    <ul>
+                        <li>Devenir un acteur majeur de la production agricole au Maroc et en Afrique de l'Ouest</li>
+                        <li>Devenir un acteur déterminant dans le marché du caroubier</li>
+                        <li>Porter la surface agricole gérée à 6,000 hectares d'ici 2030</li>
+                        <li>Expansion africaine post-2030 : objectif 50,000 hectares incluant la Sierra Leone</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026</div>
+                        <div>Première levée obligataire (60 M MAD) - Remboursement partiel CCA</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028</div>
+                        <div>Expansion majeure via émission obligataire (250 M MAD)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2030</div>
+                        <div>Objectif 6,000 Ha - Leadership national établi</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Post-2030</div>
+                        <div>Expansion africaine vers 50,000 Ha incluant Sierra Leone</div>
+                    </div>
+                </div>
+                
+                <h3>Détail des Sociétés Apportées</h3>
+                
+                <h4>Étape 1 : Apport Immédiat (417 Ha)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Société</th>
+                            <th>Surface (Ha)</th>
+                            <th>Province</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RIMA FARM</td>
+                            <td>124</td>
+                            <td>Taounate</td>
+                        </tr>
+                        <tr>
+                            <td>ALJARID</td>
+                            <td>110</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>SIGMA PALM</td>
+                            <td>110</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>TA</td>
+                            <td>16</td>
+                            <td>Settat</td>
+                        </tr>
+                        <tr>
+                            <td>AGRIPROJET 16</td>
+                            <td>16</td>
+                            <td>Taza</td>
+                        </tr>
+                        <tr>
+                            <td>GREEN PRODUCTION</td>
+                            <td>19</td>
+                            <td>Khemisset</td>
+                        </tr>
+                        <tr>
+                            <td>LES FIGUIERS DE ZAER</td>
+                            <td>9.5</td>
+                            <td>Zaer</td>
+                        </tr>
+                        <tr>
+                            <td>AGROFUSION</td>
+                            <td>8.16</td>
+                            <td>Meknès</td>
+                        </tr>
+                        <tr>
+                            <td>AGRIPROJET 4</td>
+                            <td>4</td>
+                            <td>Taza</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Étape 1</strong></td>
+                            <td><strong>417</strong></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>Étape 2 : Apport 2026 (674 Ha)</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Société</th>
+                            <th>Surface (Ha)</th>
+                            <th>Province</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MAC FRUIT SARL</td>
+                            <td>100</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>LENYOU</td>
+                            <td>100</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>CHAIMAE</td>
+                            <td>100</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>HACHIMI</td>
+                            <td>100</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>ADNANI (1)</td>
+                            <td>50</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>ADNANI (2)</td>
+                            <td>50</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>HOURI</td>
+                            <td>100</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>CHERKAOUI</td>
+                            <td>50</td>
+                            <td>Bouanan</td>
+                        </tr>
+                        <tr>
+                            <td>CHAOUI</td>
+                            <td>24</td>
+                            <td>Khénifra</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Étape 2</strong></td>
+                            <td><strong>674</strong></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="highlight-box">
+                    <p><strong>Total Portfolio:</strong> 1,091 hectares répartis sur 18 sociétés agricoles</p>
+                </div>
+            </div>
+            
+            <!-- Phase 1: Consolidation -->
+            <div id="phase1" class="section">
+                <h2>Phase 1: Consolidation des Actifs (2025-2027)</h2>
+                
+                <h3>Étape 1 (2025-2026): Intégration de 417 Hectares</h3>
+                <p>Cette première étape consiste à intégrer et optimiser les exploitations agricoles existantes identifiées dans le portefeuille initial.</p>
+                
+                <h4>Répartition par Exploitation</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Exploitation</th>
+                                <th>Surface (Ha)</th>
+                                <th>Culture Principale</th>
+                                <th>Province</th>
+                                <th>Investissement (K MAD)</th>
+                                <th>CA Année 1 (K MAD)</th>
+                                <th>CA Année 3 (K MAD)</th>
+                                <th>CA Année 5 (K MAD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RIMA FARM</td>
+                                <td>124</td>
+                                <td>Citronnier/Pamplemousse/Caroubier</td>
+                                <td>Taounate</td>
+                                <td>12,510</td>
+                                <td>3,830</td>
+                                <td>8,510</td>
+                                <td>12,310</td>
+                            </tr>
+                            <tr>
+                                <td>ALJARID</td>
+                                <td>110</td>
+                                <td>Caroubier</td>
+                                <td>Bouanan</td>
+                                <td>5,000</td>
+                                <td>0</td>
+                                <td>440</td>
+                                <td>2,200</td>
+                            </tr>
+                            <tr>
+                                <td>SIGMA PALM</td>
+                                <td>110</td>
+                                <td>Caroubier</td>
+                                <td>Bouanan</td>
+                                <td>5,000</td>
+                                <td>0</td>
+                                <td>440</td>
+                                <td>2,200</td>
+                            </tr>
+                            <tr>
+                                <td>AGRIPROJET 16</td>
+                                <td>16</td>
+                                <td>Grenadier/Olivier/Caroubier</td>
+                                <td>Taza</td>
+                                <td>3,510</td>
+                                <td>931</td>
+                                <td>1,286</td>
+                                <td>1,561</td>
+                            </tr>
+                            <tr>
+                                <td>TA</td>
+                                <td>16</td>
+                                <td>Grenadier/Caroubier/Olivier</td>
+                                <td>Settat</td>
+                                <td>2,850</td>
+                                <td>588</td>
+                                <td>898</td>
+                                <td>1,218</td>
+                            </tr>
+                            <tr>
+                                <td>GREEN PROD</td>
+                                <td>19</td>
+                                <td>Figuier/Caroubier/Olivier</td>
+                                <td>Khemisset</td>
+                                <td>2,850</td>
+                                <td>179</td>
+                                <td>492</td>
+                                <td>904</td>
+                            </tr>
+                            <tr>
+                                <td>AGRIPROJET 4</td>
+                                <td>4</td>
+                                <td>Caroubier/Olivier</td>
+                                <td>Taza</td>
+                                <td>960</td>
+                                <td>94</td>
+                                <td>208</td>
+                                <td>352</td>
+                            </tr>
+                            <tr>
+                                <td>FIGUIERS DE ZAER</td>
+                                <td>9.5</td>
+                                <td>Caroubier/Olivier</td>
+                                <td>Zaer</td>
+                                <td>1,140</td>
+                                <td>37</td>
+                                <td>304</td>
+                                <td>616</td>
+                            </tr>
+                            <tr>
+                                <td>AGROFUSION</td>
+                                <td>8.16</td>
+                                <td>Figuier/Caroubier/Olivier</td>
+                                <td>Meknès</td>
+                                <td>980</td>
+                                <td>57</td>
+                                <td>258</td>
+                                <td>512</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong>417</strong></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><strong>33,800</strong></td>
+                                <td><strong>5,716</strong></td>
+                                <td><strong>12,836</strong></td>
+                                <td><strong>21,873</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="highlight-box">
+                    <h4>Points Clés de l'Analyse:</h4>
+                    <ul>
+                        <li><strong>RIMA FARM</strong> représente la ferme phare avec 56% du CA attendu en 2030 (13M MAD), grâce à ses cultures à haute valeur (citronnier, pamplemousse)</li>
+                        <li><strong>Forte croissance du caroubier:</strong> +1,600% entre 2025 et 2030, confirmant le potentiel de cette culture stratégique</li>
+                        <li><strong>ROI rapide:</strong> Le portfolio atteint 23.3M MAD de CA en 2030 avec une marge nette de 77%</li>
+                        <li><strong>Diversification géographique:</strong> 6 provinces couvertes pour minimiser les risques climatiques</li>
+                    </ul>
+                </div>
+                
+                <h3>Étape 2 (2026-2027): Acquisition de 674 Hectares Supplémentaires</h3>
+                
+                <h4>Détail des Nouvelles Acquisitions</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ferme</th>
+                                <th>Surface (Ha)</th>
+                                <th>Cultures</th>
+                                <th>Province</th>
+                                <th>Investissement (K MAD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MAC FRUIT SARL</td>
+                                <td>100</td>
+                                <td>Olivier et maraîchage</td>
+                                <td>Bouanan</td>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <td>LENYOU</td>
+                                <td>100</td>
+                                <td>Olivier et maraîchage</td>
+                                <td>Bouanan</td>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <td>CHAIMAE</td>
+                                <td>100</td>
+                                <td>Olivier et maraîchage</td>
+                                <td>Bouanan</td>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <td>HACHIMI</td>
+                                <td>100</td>
+                                <td>Olivier</td>
+                                <td>Bouanan</td>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <td>ADNANI (1)</td>
+                                <td>50</td>
+                                <td>Caroubier</td>
+                                <td>Bouanan</td>
+                                <td>1,500</td>
+                            </tr>
+                            <tr>
+                                <td>ADNANI (2)</td>
+                                <td>50</td>
+                                <td>Olivier</td>
+                                <td>Bouanan</td>
+                                <td>1,500</td>
+                            </tr>
+                            <tr>
+                                <td>HOURI</td>
+                                <td>100</td>
+                                <td>Olivier et maraîchage</td>
+                                <td>Bouanan</td>
+                                <td>3,000</td>
+                            </tr>
+                            <tr>
+                                <td>CHERKAOUI</td>
+                                <td>50</td>
+                                <td>Olivier et maraîchage</td>
+                                <td>Bouanan</td>
+                                <td>1,500</td>
+                            </tr>
+                            <tr>
+                                <td>CHAOUI</td>
+                                <td>24</td>
+                                <td>Cerisier</td>
+                                <td>Khénifra</td>
+                                <td>960</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong>674</strong></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><strong>20,460</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h4>Projections Consolidées Phase 1</h4>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Surface Totale</div>
+                        <div class="metric-value">1,091 Ha</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Investissement Total</div>
+                        <div class="metric-value">54.3 M MAD</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">CA Projeté 2027</div>
+                        <div class="metric-value">65 M MAD</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Emplois Directs</div>
+                        <div class="metric-value">350</div>
+                    </div>
+                </div>
+                
+                <h3>Analyse de Performance par Culture (2025-2030)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Culture</th>
+                            <th>Surface (Ha)</th>
+                            <th>Production 2025 (T)</th>
+                            <th>Production 2030 (T)</th>
+                            <th>Croissance</th>
+                            <th>CA 2025 (MAD)</th>
+                            <th>CA 2030 (MAD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Caroubier</strong></td>
+                            <td>277</td>
+                            <td>139</td>
+                            <td>2,355</td>
+                            <td class="positive">+1,600%</td>
+                            <td>1,112,000</td>
+                            <td>18,840,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Citronnier</strong></td>
+                            <td>24</td>
+                            <td>480</td>
+                            <td>1,200</td>
+                            <td class="positive">+150%</td>
+                            <td>1,920,000</td>
+                            <td>4,800,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Olivier HD</strong></td>
+                            <td>38</td>
+                            <td>11</td>
+                            <td>456</td>
+                            <td class="positive">+4,000%</td>
+                            <td>91,200</td>
+                            <td>3,648,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pamplemousse</strong></td>
+                            <td>13</td>
+                            <td>260</td>
+                            <td>650</td>
+                            <td class="positive">+150%</td>
+                            <td>1,040,000</td>
+                            <td>2,600,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grenadier</strong></td>
+                            <td>11</td>
+                            <td>280</td>
+                            <td>359</td>
+                            <td class="positive">+28%</td>
+                            <td>896,000</td>
+                            <td>1,148,800</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Plan d'Action Phase 1</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">T1 2025</div>
+                        <div>Due diligence et structuration juridique des 417 Ha</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">T2 2025</div>
+                        <div>Constitution d'AgriAfrica Ventures SA avec capital initial</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">T3 2025 - T2 2026</div>
+                        <div>Intégration opérationnelle et mise aux normes</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">T3 2026</div>
+                        <div>Émission obligataire (60 M MAD) et apport des 674 Ha supplémentaires</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">T4 2026 - T4 2027</div>
+                        <div>Développement et optimisation du portefeuille consolidé</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Phase 2: Expansion -->
+            <div id="phase2" class="section">
+                <h2>Phase 2: Expansion Stratégique (2028-2030)</h2>
+                
+                <h3>Vision de l'Expansion</h3>
+                <p>La Phase 2 marque la transformation d'AgriAfrica Ventures d'un acteur régional à un leader national de l'agrobusiness.</p>
+                
+                <h3>Étapes de l'Expansion</h3>
+                
+                <h4>2028: Acquisition de 2,000 Hectares (Locations Domaniales)</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Localisation:</strong> Terres domaniales dans les régions de Souss-Massa et Oriental</li>
+                        <li><strong>Modèle:</strong> Partenariat Public-Privé avec l'État marocain</li>
+                        <li><strong>Cultures cibles:</strong> 60% caroubier, 30% olivier haute densité, 10% innovation</li>
+                        <li><strong>Investissement:</strong> 180 M MAD</li>
+                        <li><strong>Technologies:</strong> Agriculture de précision, irrigation intelligente, drones</li>
+                    </ul>
+                </div>
+                
+                <h4>2029: Extension à 3,000 Hectares Supplémentaires</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Stratégie:</strong> Acquisitions ciblées et partenariats avec coopératives</li>
+                        <li><strong>Diversification géographique:</strong> 5 régions du Maroc</li>
+                        <li><strong>Mix cultural optimisé:</strong> Introduction de cultures à très haute valeur ajoutée</li>
+                        <li><strong>Investissement:</strong> 220 M MAD</li>
+                        <li><strong>Intégration verticale:</strong> Début des activités de transformation</li>
+                    </ul>
+                </div>
+                
+                <h4>2030: Consolidation Nationale</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Objectif final:</strong> 6,000 hectares au Maroc</li>
+                        <li><strong>Leadership national établi</strong></li>
+                        <li><strong>Préparation expansion internationale:</strong> Études et partenariats pour l'Afrique de l'Ouest</li>
+                        <li><strong>Vision post-2030:</strong> Expansion vers 50,000 hectares incluant la Sierra Leone</li>
+                    </ul>
+                </div>
+                
+                <h3>Répartition Optimale du Portfolio (6,000 Ha en 2030)</h3>
+                <div class="chart-container">
+                    <h4>Distribution par Type de Culture</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Catégorie</th>
+                                <th>%</th>
+                                <th>Surface (Ha)</th>
+                                <th>Cultures Principales</th>
+                                <th>CA Projeté (M MAD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cultures à haute valeur ajoutée</td>
+                                <td>50%</td>
+                                <td>3,000</td>
+                                <td>Caroubier, Argan, Safran</td>
+                                <td>425</td>
+                            </tr>
+                            <tr>
+                                <td>Cultures d'exportation</td>
+                                <td>20%</td>
+                                <td>1,200</td>
+                                <td>Agrumes bio, Avocat, Berries</td>
+                                <td>170</td>
+                            </tr>
+                            <tr>
+                                <td>Cultures stratégiques locales</td>
+                                <td>20%</td>
+                                <td>1,200</td>
+                                <td>Olivier, Céréales, Maraîchage</td>
+                                <td>170</td>
+                            </tr>
+                            <tr>
+                                <td>Cultures innovantes</td>
+                                <td>10%</td>
+                                <td>600</td>
+                                <td>Quinoa, Spiruline, Plantes médicinales</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong>100%</strong></td>
+                                <td><strong>6,000</strong></td>
+                                <td>-</td>
+                                <td><strong>850</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3>Infrastructure et Technologies</h3>
+                <ul>
+                    <li><strong>3 centres de conditionnement</strong> aux standards internationaux</li>
+                    <li><strong>2 unités de transformation</strong> (caroube et huiles)</li>
+                    <li><strong>1 laboratoire R&D</strong> en partenariat avec universités</li>
+                    <li><strong>Système ERP intégré</strong> pour gestion en temps réel</li>
+                    <li><strong>Certification GlobalG.A.P.</strong> sur 100% des exploitations</li>
+                </ul>
+            </div>
+            
+            <!-- Analyse de Marché -->
+            <div id="market" class="section">
+                <h2>Analyse de Marché et Positionnement</h2>
+                
+                <h3>Marché du Caroubier: Notre Avantage Stratégique</h3>
+                
+                <h4>Opportunité de Marché</h4>
+                <div class="highlight-box">
+                    <p>Le marché mondial du caroube connaît une croissance exceptionnelle de 8-10% par an, porté par:</p>
+                    <ul>
+                        <li>Demande croissante de l'industrie alimentaire (substitut du cacao)</li>
+                        <li>Applications pharmaceutiques en expansion</li>
+                        <li>Nouveaux usages dans les biomatériaux</li>
+                        <li>Prix en hausse constante: 2,500-4,000 €/tonne</li>
+                    </ul>
+                </div>
+                
+                <h4>Positionnement d'AgriAfrica</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Facteur</th>
+                            <th>Notre Avantage</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Échelle</td>
+                            <td>1,500+ Ha de caroubier d'ici 2030</td>
+                            <td>Top 3 producteur africain</td>
+                        </tr>
+                        <tr>
+                            <td>Qualité</td>
+                            <td>Variétés sélectionnées, culture biologique</td>
+                            <td>Premium pricing (+20%)</td>
+                        </tr>
+                        <tr>
+                            <td>Intégration</td>
+                            <td>De la production à la poudre de caroube</td>
+                            <td>Marge x3</td>
+                        </tr>
+                        <tr>
+                            <td>Certification</td>
+                            <td>Bio EU, USDA Organic, Fair Trade</td>
+                            <td>Accès marchés premium</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Stratégie d'Intégration Verticale</h3>
+                
+                <h4>Chaîne de Valeur du Caroube</h4>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Production</div>
+                        <div>1,500 Ha → 6,000 tonnes/an</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Transformation Primaire</div>
+                        <div>Séchage, concassage → Graines et pulpe</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Transformation Secondaire</div>
+                        <div>Gomme de caroube (E410) → Industrie alimentaire</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Produits Finis</div>
+                        <div>Poudre de caroube, sirop, extraits pharmaceutiques</div>
+                    </div>
+                </div>
+                
+                <h3>Projections par Culture (2026-2030)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Culture</th>
+                            <th>Surface 2027</th>
+                            <th>Surface 2030</th>
+                            <th>Prix/Tonne 2030</th>
+                            <th>CA 2030 (M MAD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Caroubier</td>
+                            <td>150 Ha</td>
+                            <td>1,500 Ha</td>
+                            <td>35,000 MAD</td>
+                            <td>210</td>
+                        </tr>
+                        <tr>
+                            <td>Olivier Bio</td>
+                            <td>400 Ha</td>
+                            <td>1,200 Ha</td>
+                            <td>45,000 MAD</td>
+                            <td>162</td>
+                        </tr>
+                        <tr>
+                            <td>Argan</td>
+                            <td>0 Ha</td>
+                            <td>500 Ha</td>
+                            <td>150,000 MAD</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Agrumes Export</td>
+                            <td>200 Ha</td>
+                            <td>800 Ha</td>
+                            <td>15,000 MAD</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Cultures Maraîchères</td>
+                            <td>300 Ha</td>
+                            <td>600 Ha</td>
+                            <td>25,000 MAD</td>
+                            <td>108</td>
+                        </tr>
+                        <tr>
+                            <td>Autres</td>
+                            <td>41 Ha</td>
+                            <td>1,400 Ha</td>
+                            <td>-</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>1,091 Ha</strong></td>
+                            <td><strong>6,000 Ha</strong></td>
+                            <td>-</td>
+                            <td><strong>850</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Évolution des Prix (2026-2030)</h3>
+                <p>Nos projections intègrent une croissance conservative des prix:</p>
+                <ul>
+                    <li><strong>Caroube:</strong> +8% par an (demande > offre)</li>
+                    <li><strong>Huile d'olive bio:</strong> +6% par an (premium européen)</li>
+                    <li><strong>Argan:</strong> +5% par an (rareté croissante)</li>
+                    <li><strong>Général:</strong> +4% par an (inflation + qualité)</li>
+                </ul>
+            </div>
+            
+            <!-- Projections Financières -->
+            <div id="financial" class="section">
+                <h2>Projections Financières Détaillées</h2>
+                
+                <h3>Compte de Résultat Prévisionnel Consolidé</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>En Millions MAD</th>
+                            <th>2026</th>
+                            <th>2027</th>
+                            <th>2028</th>
+                            <th>2029</th>
+                            <th>2030</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chiffre d'Affaires</strong></td>
+                            <td>35</td>
+                            <td>65</td>
+                            <td>220</td>
+                            <td>480</td>
+                            <td>850</td>
+                        </tr>
+                        <tr>
+                            <td>Coûts de Production</td>
+                            <td>(21)</td>
+                            <td>(36)</td>
+                            <td>(110)</td>
+                            <td>(216)</td>
+                            <td>(340)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Marge Brute</strong></td>
+                            <td>14</td>
+                            <td>29</td>
+                            <td>110</td>
+                            <td>264</td>
+                            <td>510</td>
+                        </tr>
+                        <tr>
+                            <td>% Marge Brute</td>
+                            <td>40%</td>
+                            <td>45%</td>
+                            <td>50%</td>
+                            <td>55%</td>
+                            <td>60%</td>
+                        </tr>
+                        <tr>
+                            <td>Charges Opérationnelles</td>
+                            <td>(7)</td>
+                            <td>(13)</td>
+                            <td>(33)</td>
+                            <td>(72)</td>
+                            <td>(127.5)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>EBITDA</strong></td>
+                            <td>7</td>
+                            <td>16</td>
+                            <td>77</td>
+                            <td>192</td>
+                            <td>382.5</td>
+                        </tr>
+                        <tr>
+                            <td>% EBITDA</td>
+                            <td>20%</td>
+                            <td>25%</td>
+                            <td>35%</td>
+                            <td>40%</td>
+                            <td>45%</td>
+                        </tr>
+                        <tr>
+                            <td>Amortissements</td>
+                            <td>(3)</td>
+                            <td>(5)</td>
+                            <td>(15)</td>
+                            <td>(32)</td>
+                            <td>(55)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>EBIT</strong></td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td>62</td>
+                            <td>160</td>
+                            <td>327.5</td>
+                        </tr>
+                        <tr>
+                            <td>Charges Financières</td>
+                            <td>(3)</td>
+                            <td>(3)</td>
+                            <td>(8)</td>
+                            <td>(15)</td>
+                            <td>(20)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Résultat Net</strong></td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>54</td>
+                            <td>145</td>
+                            <td>307.5</td>
+                        </tr>
+                        <tr>
+                            <td>% Marge Nette</td>
+                            <td>3%</td>
+                            <td>12%</td>
+                            <td>25%</td>
+                            <td>30%</td>
+                            <td>36%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Analyse des Ratios Financiers Clés</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">ROE (2030)</div>
+                        <div class="metric-value">38%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">ROCE (2030)</div>
+                        <div class="metric-value">42%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Debt/Equity (2030)</div>
+                        <div class="metric-value">0.4x</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Current Ratio</div>
+                        <div class="metric-value">2.8x</div>
+                    </div>
+                </div>
+                
+                <h3>Calcul du TRI et VAN</h3>
+                <div class="highlight-box">
+                    <h4>Hypothèses de Calcul:</h4>
+                    <ul>
+                        <li>Investissement initial: 460 M MAD (2026-2029)</li>
+                        <li>Taux d'actualisation: 12%</li>
+                        <li>Période: 5 ans (2026-2030)</li>
+                        <li>Valeur terminale: 15x EBITDA 2030</li>
+                    </ul>
+                    
+                    <h4>Résultats:</h4>
+                    <ul>
+                        <li><strong>TRI du Projet:</strong> 45%</li>
+                        <li><strong>VAN:</strong> 1,250 M MAD</li>
+                        <li><strong>Payback Period:</strong> 3.2 ans</li>
+                        <li><strong>Multiple de Sortie:</strong> 6.5x</li>
+                    </ul>
+                </div>
+                
+                <h3>Analyse de Sensibilité</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Scénario</th>
+                            <th>Variable</th>
+                            <th>Impact CA 2030</th>
+                            <th>Impact EBITDA</th>
+                            <th>TRI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pessimiste</td>
+                            <td>Prix -15%</td>
+                            <td>722 M MAD</td>
+                            <td>290 M MAD</td>
+                            <td>32%</td>
+                        </tr>
+                        <tr>
+                            <td>Base</td>
+                            <td>Projection centrale</td>
+                            <td>850 M MAD</td>
+                            <td>382 M MAD</td>
+                            <td>45%</td>
+                        </tr>
+                        <tr>
+                            <td>Optimiste</td>
+                            <td>Prix +15%</td>
+                            <td>977 M MAD</td>
+                            <td>475 M MAD</td>
+                            <td>58%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Besoins en Fonds de Roulement</h3>
+                <p>Evolution du BFR en % du CA:</p>
+                <ul>
+                    <li>2026-2027: 25% (phase de démarrage)</li>
+                    <li>2028-2029: 20% (optimisation)</li>
+                    <li>2030+: 15% (maturité)</li>
+                </ul>
+            </div>
+            
+            <!-- Stratégie de Financement -->
+            <div id="funding" class="section">
+                <h2>Stratégie de Financement Multi-Phases</h2>
+                
+                <h3>Vue d'Ensemble du Plan de Financement</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025: Capital Initial</div>
+                        <div>
+                            <strong>1 M MAD</strong><br>
+                            Structure: 40% Elias H. ASKOUR / 60% KEF Investissements<br>
+                            Libération: 300,000 MAD à la constitution
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026: Emprunt Obligataire</div>
+                        <div>
+                            <strong>60 M MAD</strong><br>
+                            Structure: Obligataire avec "equity upside"<br>
+                            Utilisation: 40 M MAD remboursement CCA + 20 M MAD développement
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028: Expansion</div>
+                        <div>
+                            <strong>250 M MAD</strong><br>
+                            Structure: Émission obligataire en deux tranches<br>
+                            Objectif: Porter la surface à 6,000 Ha
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Post-2030: Consolidation</div>
+                        <div>
+                            <strong>500 M MAD</strong><br>
+                            Tranche 3 pour atteindre l'objectif de 50,000 Ha<br>
+                            Leadership panafricain
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Phase 1: Emprunt Obligataire (2026)</h3>
+                <div class="highlight-box">
+                    <h4>Structure de l'Opération</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Instrument</th>
+                                <th>Montant</th>
+                                <th>Utilisation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Emprunt Obligataire</td>
+                                <td>60 M MAD</td>
+                                <td>
+                                    • 40 M MAD: Remboursement partiel CCA<br>
+                                    • 20 M MAD: Investissements et BFR
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>Utilisation des Fonds</h4>
+                    <ul>
+                        <li><strong>Remboursement complet du CCA:</strong> 40 millions MAD à M. ASKOUR</li>
+                        <li><strong>Conservation des dividendes futurs post-remboursement CCA</strong></li>
+                        <li><strong>Financement du développement sur le périmètre de 1,091 Ha</strong></li>
+                    </ul>
+                </div>
+                
+                <h3>Phase 2: Financement d'Expansion (2028)</h3>
+                <div class="highlight-box">
+                    <h4>Émission Obligataire</h4>
+                    <ul>
+                        <li><strong>Montant:</strong> 250 M MAD</li>
+                        <li><strong>Objectif:</strong> Porter la surface agricole à 6,000 Ha</li>
+                        <li><strong>Structure:</strong> Émission en deux tranches</li>
+                        <li><strong>Utilisation:</strong>
+                            <ul>
+                                <li>Acquisition de nouvelles terres</li>
+                                <li>Développement des infrastructures</li>
+                                <li>Expansion des cultures à haute valeur ajoutée</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3>Phase 3: Vision Post-2030 (50,000 Ha)</h3>
+                <div class="highlight-box">
+                    <h4>Expansion Africaine Post-2030</h4>
+                    <ul>
+                        <li><strong>Montant:</strong> 500 M MAD (Tranche 3)</li>
+                        <li><strong>Objectif:</strong> Atteindre 50,000 hectares</li>
+                        <li><strong>Focus géographique:</strong> Sierra Leone et Afrique de l'Ouest</li>
+                        <li><strong>Stratégie:</strong>
+                            <ul>
+                                <li>Expansion panafricaine majeure</li>
+                                <li>50,000 hectares incluant la Sierra Leone</li>
+                                <li>Leadership dans le marché africain du caroubier</li>
+                                <li>Intégration verticale complète</li>
+                                <li>Position dominante en agriculture moderne africaine</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h4>Options de Sortie</h4>
+                    <ul>
+                        <li>IPO sur la Bourse de Casablanca (horizon 2030)</li>
+                        <li>Cession stratégique à un groupe international</li>
+                        <li>Fusion avec un acteur majeur du secteur</li>
+                    </ul>
+                </div>
+                
+                <h3>Structure du Capital</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Actionnaire</th>
+                            <th>% Initial</th>
+                            <th>Évolution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elias Hicham ASKOUR</td>
+                            <td>40%</td>
+                            <td>Fondateur technique</td>
+                        </tr>
+                        <tr>
+                            <td>KEF Investissements SARL</td>
+                            <td>60%</td>
+                            <td>Partenaire financier</td>
+                        </tr>
+                        <tr>
+                            <td>Futurs investisseurs</td>
+                            <td>-</td>
+                            <td>Via émissions obligataires et equity upside</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Stratégie RH -->
+            <div id="hr" class="section">
+                <h2>Stratégie RH</h2>
+                
+                <h3>Transfert de l'Équipe Fondatrice</h3>
+                <div class="highlight-box">
+                    <p><strong>Asset majeur:</strong> Transfert à AgriAfrica Ventures de 20 ingénieurs et techniciens agricoles expérimentés ayant créé et exploité avec succès plus de 90 exploitations agricoles.</p>
+                    
+                    <h4>Profil de l'Équipe Transférée:</h4>
+                    <ul>
+                        <li>5 Ingénieurs agronomes seniors (10+ ans d'expérience)</li>
+                        <li>8 Ingénieurs agronomes (5-10 ans)</li>
+                        <li>7 Techniciens spécialisés (irrigation, mécanisation, phytosanitaire)</li>
+                        <li>Track record: 90+ fermes créées, 15,000+ Ha développés</li>
+                        <li>Expertise multi-cultures et multi-régions</li>
+                    </ul>
+                </div>
+                
+                <h3>Structure Organisationnelle 2030</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Département</th>
+                            <th>2026</th>
+                            <th>2028</th>
+                            <th>2030</th>
+                            <th>Rôle Clé</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Direction Générale</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>12</td>
+                            <td>Leadership stratégique</td>
+                        </tr>
+                        <tr>
+                            <td>Operations Agricoles</td>
+                            <td>80</td>
+                            <td>350</td>
+                            <td>800</td>
+                            <td>Gestion des exploitations</td>
+                        </tr>
+                        <tr>
+                            <td>R&D et Innovation</td>
+                            <td>5</td>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>Agriculture de précision</td>
+                        </tr>
+                        <tr>
+                            <td>Transformation</td>
+                            <td>0</td>
+                            <td>50</td>
+                            <td>150</td>
+                            <td>Unités industrielles</td>
+                        </tr>
+                        <tr>
+                            <td>Commercial & Export</td>
+                            <td>10</td>
+                            <td>25</td>
+                            <td>50</td>
+                            <td>Développement marchés</td>
+                        </tr>
+                        <tr>
+                            <td>Finance & Admin</td>
+                            <td>15</td>
+                            <td>30</td>
+                            <td>60</td>
+                            <td>Gestion corporate</td>
+                        </tr>
+                        <tr>
+                            <td>Saisonniers</td>
+                            <td>235</td>
+                            <td>1,022</td>
+                            <td>1,398</td>
+                            <td>Main d'œuvre agricole</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>350</strong></td>
+                            <td><strong>1,500</strong></td>
+                            <td><strong>2,500</strong></td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Stratégie de Développement des Talents</h3>
+                
+                <h4>Programme de Formation Continue</h4>
+                <ul>
+                    <li><strong>AgriAfrica Academy:</strong> Centre de formation interne</li>
+                    <li><strong>Partenariats universitaires:</strong> IAV Hassan II, ENA Meknès</li>
+                    <li><strong>Certifications internationales:</strong> Agriculture de précision, Bio</li>
+                    <li><strong>Budget formation:</strong> 2% de la masse salariale</li>
+                </ul>
+                
+                <h4>Plan de Rétention des Talents</h4>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Stock Options</div>
+                        <div class="metric-value">10%</div>
+                        <div>du capital pour employés clés</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Bonus Performance</div>
+                        <div class="metric-value">20-50%</div>
+                        <div>du salaire annuel</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Mobilité Interne</div>
+                        <div class="metric-value">30%</div>
+                        <div>des postes pourvus en interne</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Taux de Rétention</div>
+                        <div class="metric-value">90%+</div>
+                        <div>pour personnel clé</div>
+                    </div>
+                </div>
+                
+                <h3>Impact Social et Développement Local</h3>
+                <ul>
+                    <li><strong>2,500 emplois directs</strong> créés d'ici 2030</li>
+                    <li><strong>10,000 emplois indirects</strong> dans la chaîne de valeur</li>
+                    <li><strong>70% d'emplois locaux</strong> dans chaque région d'implantation</li>
+                    <li><strong>Programme jeunes diplômés:</strong> 50 stagiaires/an</li>
+                    <li><strong>Formation agriculteurs locaux:</strong> 500 bénéficiaires/an</li>
+                </ul>
+            </div>
+            
+            <!-- ESG & Durabilité -->
+            <div id="esg" class="section">
+                <h2>Stratégie ESG et Durabilité</h2>
+                
+                <h3>Engagement pour le Développement Durable</h3>
+                <p>AgriAfrica Ventures s'engage à être un leader en matière de durabilité dans l'agrobusiness africain, en alignant ses opérations sur les Objectifs de Développement Durable (ODD) des Nations Unies.</p>
+                
+                <h3>Piliers de Notre Stratégie ESG</h3>
+                
+                <h4>Environnement</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Agriculture Biologique:</strong> 60% des surfaces certifiées bio d'ici 2030</li>
+                        <li><strong>Gestion de l'Eau:</strong> Irrigation goutte-à-goutte sur 100% des exploitations</li>
+                        <li><strong>Énergie Renouvelable:</strong> 50% d'autonomie énergétique (solaire + éolien)</li>
+                        <li><strong>Biodiversité:</strong> 10% des terres dédiées aux corridors écologiques</li>
+                        <li><strong>Séquestration Carbone:</strong> 50,000 tonnes CO2/an via le caroubier</li>
+                    </ul>
+                </div>
+                
+                <h4>Social</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Emploi Local:</strong> 2,500 emplois directs, 70% locaux</li>
+                        <li><strong>Formation:</strong> 1,000 heures de formation/employé/an</li>
+                        <li><strong>Égalité des Genres:</strong> 40% de femmes dans l'effectif</li>
+                        <li><strong>Santé & Sécurité:</strong> Zéro accident grave objectif</li>
+                        <li><strong>Communautés:</strong> 2% du CA investi dans projets locaux</li>
+                    </ul>
+                </div>
+                
+                <h4>Gouvernance</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Conseil Diversifié:</strong> 40% d'administrateurs indépendants</li>
+                        <li><strong>Transparence:</strong> Reporting trimestriel aux standards IFRS</li>
+                        <li><strong>Éthique:</strong> Code de conduite et ligne d'alerte</li>
+                        <li><strong>Audit:</strong> Big 4 + certification B Corp</li>
+                        <li><strong>Parties Prenantes:</strong> Dialogue structuré annuel</li>
+                    </ul>
+                </div>
+                
+                <h3>Certifications et Standards</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Certification</th>
+                            <th>Domaine</th>
+                            <th>Échéance</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GlobalG.A.P.</td>
+                            <td>Bonnes pratiques agricoles</td>
+                            <td>2027</td>
+                            <td>Accès marchés export</td>
+                        </tr>
+                        <tr>
+                            <td>EU Organic</td>
+                            <td>Agriculture biologique</td>
+                            <td>2028</td>
+                            <td>Premium pricing +25%</td>
+                        </tr>
+                        <tr>
+                            <td>Fair Trade</td>
+                            <td>Commerce équitable</td>
+                            <td>2028</td>
+                            <td>Impact social reconnu</td>
+                        </tr>
+                        <tr>
+                            <td>ISO 14001</td>
+                            <td>Management environnemental</td>
+                            <td>2029</td>
+                            <td>Excellence opérationnelle</td>
+                        </tr>
+                        <tr>
+                            <td>B Corp</td>
+                            <td>Impact global</td>
+                            <td>2030</td>
+                            <td>Leadership ESG</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Objectifs Mesurables 2030</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Réduction Eau</div>
+                        <div class="metric-value">-40%</div>
+                        <div>par tonne produite</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Émissions CO2</div>
+                        <div class="metric-value">Net Zero</div>
+                        <div>Scope 1 & 2</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Déchets Valorisés</div>
+                        <div class="metric-value">95%</div>
+                        <div>Économie circulaire</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Score ESG</div>
+                        <div class="metric-value">AA</div>
+                        <div>Rating MSCI</div>
+                    </div>
+                </div>
+                
+                <h3>Innovation pour la Durabilité</h3>
+                <ul>
+                    <li><strong>AgTech:</strong> Drones et IA pour optimisation des intrants</li>
+                    <li><strong>Biocontrôle:</strong> Réduction de 70% des pesticides chimiques</li>
+                    <li><strong>Agroforesterie:</strong> Intégration d'arbres dans les cultures</li>
+                    <li><strong>Blockchain:</strong> Traçabilité complète de la ferme à l'assiette</li>
+                    <li><strong>Économie Circulaire:</strong> Valorisation 100% des co-produits</li>
+                </ul>
+            </div>
+            
+            <!-- Gestion des Risques -->
+            <div id="risk" class="section">
+                <h2>Gestion des Risques</h2>
+                
+                <h3>Cartographie des Risques Majeurs</h3>
+                
+                <h4>Risques Opérationnels</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Risque</th>
+                            <th>Probabilité</th>
+                            <th>Impact</th>
+                            <th>Mitigation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aléas climatiques</td>
+                            <td>Élevée</td>
+                            <td>Fort</td>
+                            <td>
+                                • Diversification géographique<br>
+                                • Assurance récolte paramétrique<br>
+                                • Irrigation efficiente<br>
+                                • Variétés résistantes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maladies/Ravageurs</td>
+                            <td>Moyenne</td>
+                            <td>Moyen</td>
+                            <td>
+                                • Monitoring phytosanitaire<br>
+                                • Biocontrôle préventif<br>
+                                • Rotation des cultures<br>
+                                • Équipe technique experte
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pénurie main d'œuvre</td>
+                            <td>Moyenne</td>
+                            <td>Moyen</td>
+                            <td>
+                                • Mécanisation progressive<br>
+                                • Conditions attractives<br>
+                                • Formation continue<br>
+                                • Partenariats locaux
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>Risques de Marché</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Risque</th>
+                            <th>Probabilité</th>
+                            <th>Impact</th>
+                            <th>Mitigation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Volatilité des prix</td>
+                            <td>Élevée</td>
+                            <td>Fort</td>
+                            <td>
+                                • Contrats long terme<br>
+                                • Diversification produits<br>
+                                • Intégration verticale<br>
+                                • Hedging financier
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Concurrence accrue</td>
+                            <td>Moyenne</td>
+                            <td>Moyen</td>
+                            <td>
+                                • Différenciation qualité<br>
+                                • Certifications premium<br>
+                                • Innovation continue<br>
+                                • Fidélisation clients
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Barrières commerciales</td>
+                            <td>Faible</td>
+                            <td>Fort</td>
+                            <td>
+                                • Multi-certification<br>
+                                • Diversification marchés<br>
+                                • Lobbying sectoriel<br>
+                                • Partenariats export
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>Risques Financiers</h4>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Risque de change:</strong> Couverture naturelle (50% revenus export) + instruments dérivés</li>
+                        <li><strong>Risque de taux:</strong> Mix dette fixe/variable optimisé, caps de taux</li>
+                        <li><strong>Risque de liquidité:</strong> Lignes de crédit confirmées, cash pooling</li>
+                        <li><strong>Risque de crédit:</strong> Assurance-crédit export, diversification clients</li>
+                    </ul>
+                </div>
+                
+                <h3>Système de Management des Risques</h3>
+                
+                <h4>Gouvernance des Risques</h4>
+                <ul>
+                    <li><strong>Comité des Risques:</strong> Réunion trimestrielle au niveau Board</li>
+                    <li><strong>Chief Risk Officer:</strong> Reporting direct au CEO</li>
+                    <li><strong>Risk Champions:</strong> Dans chaque exploitation</li>
+                    <li><strong>Audit Interne:</strong> Revue annuelle complète</li>
+                </ul>
+                
+                <h4>Outils et Processus</h4>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Identification</div>
+                        <div>Cartographie mise à jour trimestriellement</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Évaluation</div>
+                        <div>Scoring probabilité x impact, stress tests</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mitigation</div>
+                        <div>Plans d'action spécifiques, KPIs de suivi</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Monitoring</div>
+                        <div>Dashboard temps réel, alertes automatiques</div>
+                    </div>
+                </div>
+                
+                <h3>Plans de Contingence</h3>
+                
+                <h4>Scénarios de Crise</h4>
+                <ul>
+                    <li><strong>Sécheresse sévère:</strong> Activation irrigation secours, priorisation cultures</li>
+                    <li><strong>Effondrement prix:</strong> Stockage stratégique, transformation accrue</li>
+                    <li><strong>Pandémie:</strong> Protocoles sanitaires, automatisation accélérée</li>
+                    <li><strong>Crise financière:</strong> Réduction CAPEX, focus cash generation</li>
+                </ul>
+                
+                <h4>Business Continuity Plan</h4>
+                <ul>
+                    <li>Redondance des systèmes critiques</li>
+                    <li>Backup sites de production</li>
+                    <li>Stocks de sécurité intrants clés</li>
+                    <li>Lignes de crédit stand-by</li>
+                    <li>Communication de crise structurée</li>
+                </ul>
+            </div>
+            
+            <!-- Synthèse et Recommandations -->
+            <div id="synthesis" class="section">
+                <h2>Synthèse et Recommandations</h2>
+                
+                <h3>Consolidation des Analyses</h3>
+                <p>AgriAfrica Ventures présente une opportunité d'investissement unique combinant:</p>
+                <ul>
+                    <li><strong>Un marché porteur:</strong> Demande croissante pour l'agriculture durable en Afrique</li>
+                    <li><strong>Une équipe exceptionnelle:</strong> 20+ experts ayant prouvé leur capacité d'exécution</li>
+                    <li><strong>Un modèle scalable:</strong> De 1,091 à 6,000 hectares d'ici 2030</li>
+                    <li><strong>Des rendements attractifs:</strong> TRI de 45%, multiple de sortie 6.5x</li>
+                    <li><strong>Un impact positif:</strong> 2,500 emplois, agriculture durable, développement local</li>
+                    <li><strong>Vision post-2030:</strong> Expansion à 50,000 hectares incluant la Sierra Leone</li>
+                </ul>
+                
+                <h3>Feuille de Route Stratégique 2026-2030</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026</div>
+                        <div>
+                            <strong>Lancement et Consolidation</strong><br>
+                            • Closing Emprunt Obligataire (60 M MAD)<br>
+                            • Intégration 1,091 hectares<br>
+                            • Mise en place gouvernance<br>
+                            • Recrutement équipe senior
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2027</div>
+                        <div>
+                            <strong>Optimisation et Croissance</strong><br>
+                            • CA 65 M MAD atteint<br>
+                            • Certifications obtenues<br>
+                            • Préparation expansion<br>
+                            • Proof of concept validé
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028</div>
+                        <div>
+                            <strong>Expansion Nationale</strong><br>
+                            • Émission obligataire 250 M MAD<br>
+                            • +2,000 hectares domaniaux<br>
+                            • Unité transformation opérationnelle<br>
+                            • Leadership national en construction
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2029</div>
+                        <div>
+                            <strong>Consolidation Leadership</strong><br>
+                            • 5,000 hectares exploités<br>
+                            • CA 480 M MAD<br>
+                            • Préparation expansion internationale<br>
+                            • Équipe renforcée
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2030</div>
+                        <div>
+                            <strong>Objectif National Atteint</strong><br>
+                            • 6,000 hectares exploités au Maroc<br>
+                            • CA 850 M MAD<br>
+                            • Leadership national établi<br>
+                            • Préparation expansion internationale
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Facteurs Clés de Succès</h3>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Excellence Opérationnelle</div>
+                        <div class="metric-value">✓</div>
+                        <div>Équipe proven, processus rodés</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Accès au Foncier</div>
+                        <div class="metric-value">✓</div>
+                        <div>Pipeline sécurisé, relations établies</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Financement Structuré</div>
+                        <div class="metric-value">✓</div>
+                        <div>Plan multi-phases validé</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Différenciation Marché</div>
+                        <div class="metric-value">✓</div>
+                        <div>Focus haute valeur, certifications</div>
+                    </div>
+                </div>
+                
+                <h3>Recommandations pour les Investisseurs</h3>
+                
+                <h4>Pourquoi Investir dans AgriAfrica Ventures?</h4>
+                <ol>
+                    <li><strong>Timing optimal:</strong> Entrée pre-croissance exponentielle</li>
+                    <li><strong>Risque maîtrisé:</strong> Actifs tangibles, revenus récurrents</li>
+                    <li><strong>Upside significatif:</strong> Multiple 6.5x, sortie via IPO ou M&A</li>
+                    <li><strong>Impact ESG:</strong> Investissement aligné critères durabilité</li>
+                    <li><strong>Équipe exceptionnelle:</strong> Track record prouvé, vision claire</li>
+                </ol>
+                
+                <h4>Structure d'Investissement Recommandée</h4>
+                <ul>
+                    <li><strong>Obligataire (2026):</strong> Rendement sécurisé avec equity upside</li>
+                    <li><strong>Obligataire (2028):</strong> Financement de l'expansion nationale</li>
+                    <li><strong>Options de sortie (2030+):</strong> IPO ou cession stratégique</li>
+                </ul>
+                
+                <h3>Vision Post-2030</h3>
+                <div class="highlight-box">
+                    <p><strong>Après avoir atteint l'objectif de 6,000 hectares au Maroc, AgriAfrica Ventures ambitionne de devenir le leader panafricain incontesté de l'agrobusiness durable avec:</strong></p>
+                    <ul>
+                        <li>50,000+ hectares sous gestion (incluant la Sierra Leone)</li>
+                        <li>Présence dans 5+ pays africains</li>
+                        <li>CA dépassant 5 milliards MAD</li>
+                        <li>10,000+ emplois directs créés</li>
+                        <li>Leader en agriculture régénérative et technologies AgTech</li>
+                    </ul>
+                </div>
+                
+                <h3>Prochaines Étapes</h3>
+                <ol>
+                    <li><strong>T1 2025:</strong> Finalisation due diligence foncière</li>
+                    <li><strong>T2 2025:</strong> Constitution d'AgriAfrica Ventures SA</li>
+                    <li><strong>T3 2025:</strong> Structuration apports en nature</li>
+                    <li><strong>T4 2025 - T1 2026:</strong> Préparation émission obligataire</li>
+                    <li><strong>2026:</strong> Exécution plan de consolidation</li>
+                </ol>
+                
+                <div class="highlight-box" style="text-align: center; margin-top: 2rem;">
+                    <h3>Contact</h3>
+                    <p>Pour plus d'informations sur cette opportunité d'investissement:</p>
+                    <p><strong>AgriAfrica Ventures SA</strong><br>
+                    Email: investors@agriafrica.ma<br>
+                    Tel: +212 5XX XXX XXX</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h3>Télécharger ce Business Plan</h3>
+            <p>Cliquez sur le bouton ci-dessous pour sauvegarder ce document HTML sur votre ordinateur.</p>
+            <a href="#" class="button" onclick="downloadHTML()">Télécharger le Business Plan</a>
+        </div>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+        
+        function downloadHTML() {
+            const element = document.documentElement;
+            const html = element.outerHTML;
+            const blob = new Blob([html], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'AgriAfrica_Business_Plan_2025-2030_Final.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        // Print functionality
+        window.addEventListener('beforeprint', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'block';
+            });
+        });
+        
+        window.addEventListener('afterprint', () => {
+            showSection('summary');
+        });
+    </script>
+</body>
+</html>
